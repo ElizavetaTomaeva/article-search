@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   width: auto;
+  //background-color: grey;
 }
 
 input {
@@ -47,14 +48,28 @@ input {
 }
 
 .links {
-  color: black;
+  //color: black;
+  color: #008CBA;
   background-color: lightgrey;
+  font-family: sans-serif;
+  text-decoration: none;
 }
 
 select {
   /*float: right;*/
   /*width: 200px;*/
     /*height: 30px;*/
+}
+
+.logo {
+  width: 775px;
+  height: 115px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h1 {
+  color: #008CBA;
 }
 
 button {
@@ -74,4 +89,38 @@ button {
 button:hover {
   background-color: #5500ff;
   color: white;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  min-width: 71.5%;
+  text-align: center;
+  justify-content: center;
+}
+
+.pagination-item {
+  padding: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: #008CBA;
+  background-color: #008CBA;
+  color: white;
+  //border: 7px;
+  //border-color: #008CBA;
+}
+.pagination-item:hover {
+  background-color: white;
+  color: #008CBA;
+}
+
+.active-item {
+  background-color: white;
+  color: #008CBA;
+}
+
+.photo-frame {
+  border-style: solid;
+  width: 200px;
+  height: 200px;
 }

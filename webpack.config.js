@@ -24,16 +24,16 @@ module.exports = {
   },
   module: {
     loaders: [
-        {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: {
-                loader: 'babel-loader',
-                options: {
-                    presets: ['es2015']
-                }
-            }
-        },
+        // {
+        // test: /\.js$/,
+        // exclude: /node_modules/,
+        // use: {
+        //     loader: 'babel-loader',
+        //     options: {
+        //         presets: ['es2015']
+        //     }
+        // }
+        // },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,

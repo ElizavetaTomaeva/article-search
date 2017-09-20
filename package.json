@@ -30,14 +30,20 @@
   "dependencies": {
     "axios": "^0.16.2",
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-node": "^5.1.1",
+    "bootstrap": "^3.3.7",
     "json-loader": "^0.5.7",
     "moment": "^2.18.1",
     "pg": "^7.2.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-paginate": "^4.4.4",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8",
+    "react-variable-height-infinite-scroller": "^3.3.5",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
   }

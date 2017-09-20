@@ -3,16 +3,15 @@ import axios from 'axios';
 export const GET_ARTICLES_SUCCESS = 'GET_ARTICLES_SUCCESS';
 
 const initialState = [];
-// const DocType = 'facet_field=document_type=article'
+const DocType = 'facet_field=document_type=article';
 
-export const getArticles = (key, subject) => ( dispatch) => {
-    axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${key}&q=${subject}`)
+export const getArticles = (key, subject, page) => ( dispatch) => {
+    axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${key}&q=${subject}&${DocType}&page=${page}`)
         .then((response) => {
-        // console.log("qw");
-            dispatch({ type: GET_ARTICLES_SUCCESS, articles: response.data.response.docs}
+            dispatch({ type: GET_ARTICLES_SUCCESS, articles: [response.data.response.docs, response.data.response.meta] }
             )
         })
-        .catch(function (error) {
+        .catch((error) => {
             console.log(error);
         })
 };
